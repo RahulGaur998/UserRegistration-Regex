@@ -56,3 +56,14 @@
 2022-10-02 12:29:30.544 [main] INFO  com.regex.App - Invalid input!! Please try again
 2022-10-02 12:29:30.545 [main] INFO  com.regex.App - Please enter last name: 
 2022-10-02 12:29:33.945 [main] INFO  com.regex.App - Gaur
+2022-10-02 13:18:09.033 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 13:18:09.043 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 13:18:12.195 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 13:18:12.196 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 13:18:14.127 [main] INFO  com.regex.App - Rahul
+2022-10-02 13:18:14.127 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 13:18:15.943 [main] INFO  com.regex.App - Gaur
+2022-10-02 13:18:15.945 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-02 13:18:16.868 [main] INFO  com.regex.App - sad
+2022-10-02 13:18:16.868 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-02 13:18:27.196 [main] INFO  com.regex.App - ga.asd@gm.co

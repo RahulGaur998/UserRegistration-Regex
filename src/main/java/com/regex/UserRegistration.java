@@ -21,11 +21,21 @@ public class UserRegistration {
             return "invalid";
         }
     }
+    String emailPatternMatcher(String value) {
+        Pattern patternObject = Pattern.compile("^[a-z]{1}[a-zA-Z.]*@[a-z]{2}.[a-z]{2}[a-z.]?");
+        Matcher matchObject = patternObject.matcher(value);
+        if (matchObject.matches()) {
+            return "valid";
+        } else {
+            return "invalid";
+        }
+    }
 
     void UserRegistrationMain() {
         String validInvalidFirstName = "invalid";
         String validInvalidLastName = "invalid";
-        
+        String validInvalidEmail = "invalid";
+
         while ((validInvalidFirstName.equals("invalid"))) {
             logger.info("Please enter first name: ");
             String firstName = scannerObject.nextLine();
@@ -48,6 +58,19 @@ public class UserRegistration {
                 logger.info("Invalid input!! Please try again");
             }
         }
+
+        while ((validInvalidEmail.equals("invalid"))) {
+            logger.info("Please enter Email Id: ");
+            String emailId = scannerObject.nextLine();
+            validInvalidEmail = emailPatternMatcher(emailId);
+            if (validInvalidLastName.equals("valid")) {
+                userObject.setLastName(emailId);
+                logger.info(userObject.getLastName());
+            } else {
+                logger.info("Invalid input!! Please try again");
+            }
+        }
+        
         scannerObject.close();
     }
 
