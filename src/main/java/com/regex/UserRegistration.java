@@ -42,11 +42,22 @@ public class UserRegistration {
         }
     }
 
+    String passwordPatternMatcher(String value) {
+        Pattern patternObject = Pattern.compile("[a-zA-Z0-9]{8,}");
+        Matcher matchObject = patternObject.matcher(value);
+        if (matchObject.matches()) {
+            return "valid";
+        } else {
+            return "invalid";
+        }
+    }
+
     void UserRegistrationMain() {
         String validInvalidFirstName = "invalid";
         String validInvalidLastName = "invalid";
         String validInvalidEmail = "invalid";
         String validInvalidPhoneNumber = "invalid";
+        String validInvalidPassword = "invalid";
 
         while ((validInvalidFirstName.equals("invalid"))) {
             logger.info("Please enter first name: ");
@@ -89,6 +100,18 @@ public class UserRegistration {
             if (validInvalidPhoneNumber.equals("valid")) {
                 userObject.setPhoneNumber(phoneNumber);
                 logger.info(userObject.getPhoneNumber());
+            } else {
+                logger.info("Invalid input!! Please try again");
+            }
+        }
+
+        while ((validInvalidPassword.equals("invalid"))) {
+            logger.info("Please enter Password: ");
+            String password = scannerObject.nextLine();
+            validInvalidPassword = passwordPatternMatcher(password);
+            if (validInvalidPassword.equals("valid")) {
+                userObject.setPassword(password);
+                logger.info(userObject.getPassword());
             } else {
                 logger.info("Invalid input!! Please try again");
             }
