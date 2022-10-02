@@ -25,3 +25,34 @@
 2022-10-02 12:18:04.950 [main] INFO  com.regex.App - Please enter first name: 
 2022-10-02 12:18:06.756 [main] INFO  com.regex.App - Rahul
 2022-10-02 12:18:07.891 [main] INFO  com.regex.App - Gaur
+2022-10-02 12:26:16.902 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 12:26:16.910 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:26:18.764 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:26:20.739 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:26:22.697 [main] INFO  com.regex.App - Rahul
+2022-10-02 12:26:22.698 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 12:26:24.833 [main] INFO  com.regex.App - Gaur
+2022-10-02 12:29:06.682 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 12:29:06.691 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:29:11.496 [main] INFO  com.regex.App - Rahu
+2022-10-02 12:29:11.497 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 12:29:14.287 [main] INFO  com.regex.App - Gaur
+2022-10-02 12:29:16.616 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 12:29:16.626 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:29:17.723 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 12:29:17.725 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:29:19.478 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 12:29:19.479 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:29:20.467 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 12:29:20.467 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:29:21.991 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 12:29:21.991 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 12:29:27.115 [main] INFO  com.regex.App - Rahul
+2022-10-02 12:29:27.116 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 12:29:28.290 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 12:29:28.291 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 12:29:29.228 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 12:29:29.229 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 12:29:30.544 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 12:29:30.545 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 12:29:33.945 [main] INFO  com.regex.App - Gaur
