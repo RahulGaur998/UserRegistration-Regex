@@ -161,3 +161,9 @@
 2022-10-02 15:47:24.102 [main] INFO  com.regex.App - Please enter Email Id: 
 2022-10-02 15:47:29.188 [main] INFO  com.regex.App - aasd@fas.com
 >>>>>>> EmailValidation
+2022-10-02 23:35:27.975 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 23:35:27.985 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 23:35:29.396 [main] INFO  com.regex.App - Invalid Input detected!
+2022-10-02 23:35:34.550 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 23:35:34.566 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 23:35:35.500 [main] INFO  com.regex.App - Invalid Input detected!

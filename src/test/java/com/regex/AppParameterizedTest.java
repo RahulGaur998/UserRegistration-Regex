@@ -28,12 +28,14 @@ public class AppParameterizedTest {
 
     @Parameterized.Parameters
     public static Collection inputs() {
-        return Arrays.asList(new Object[][] { { "ram@gmail.com", "valid" }, { "123@gmail.com", "invalid" },
+        return Arrays.asList(new Object[][] { { "ram@gmail.com", "invalid" }, { "123@gmail.com", "invalid" },
                 { "abc-1@gmail.com.omc", "valid" } });
     }
 
-    @Test
-    public void checkUserInput() {
+    @Test(expected = Exception.class)
+    public void checkUserInput() throws Exception {
+        InvalidInputException invalid = new InvalidInputException();
+        invalid.InvalidInput();
         assertEquals(this.expectation, userObject.emailPatternMatcher(this.userInput));
     }
 }

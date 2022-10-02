@@ -12,110 +12,102 @@ public class UserRegistration {
     Scanner scannerObject = new Scanner(System.in);
     User userObject = new User();
 
-    String namePatternMatcher(String value) {
+    Boolean namePatternMatcher(String value) {
         Pattern patternObject = Pattern.compile("^[A-Z]{1}[a-z]{3,}");
         Matcher matchObject = patternObject.matcher(value);
         if (matchObject.matches()) {
-            return "valid";
+            return true;
         } else {
-            return "invalid";
+            return false;
         }
     }
 
-    String emailPatternMatcher(String value) {
+    Boolean emailPatternMatcher(String value) {
         Pattern patternObject = Pattern.compile("^[a-z]{1}[a-zA-Z0-9+-.]*@[a-z0-9]*.[a-z]*(.[a-z]*?)$");
         // ^[a-z]{1}[a-zA-Z.]*@[a-z]{2}.[a-z]{2}[a-z.]?
         Matcher matchObject = patternObject.matcher(value);
         if (matchObject.matches()) {
-            return "valid";
+            return true;
         } else {
-            return "invalid";
+            return false;
         }
     }
 
-    String phoneNumberPatternMatcher(String value) {
+    Boolean phoneNumberPatternMatcher(String value) {
         Pattern patternObject = Pattern.compile("^[91]{2}[ ]{1}[0-9]{10}$");
         Matcher matchObject = patternObject.matcher(value);
         if (matchObject.matches()) {
-            return "valid";
+            return true;
         } else {
-            return "invalid";
+            return false;
         }
     }
 
-    String passwordPatternMatcher(String value) {
+    Boolean passwordPatternMatcher(String value) {
         Pattern patternObject = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#&–?/*~$^]{1})).{8,}$");
         Matcher matchObject = patternObject.matcher(value);
         if (matchObject.matches()) {
-            return "valid";
+            return true;
         } else {
-            return "invalid";
+            return false;
         }
     }
 
-    void UserRegistrationMain() {
-        String validInvalidFirstName = "invalid";
-        String validInvalidLastName = "invalid";
-        String validInvalidEmail = "invalid";
-        String validInvalidPhoneNumber = "invalid";
-        String validInvalidPassword = "invalid";
+    void UserRegistrationMain() throws InvalidInputException {
+        Boolean isValid;
 
-        while ((validInvalidFirstName.equals("invalid"))) {
+        try {
             logger.info("Please enter first name: ");
             String firstName = scannerObject.nextLine();
-            validInvalidFirstName = namePatternMatcher(firstName);
-            if (validInvalidFirstName.equals("valid")) {
+            isValid = namePatternMatcher(firstName);
+            if (isValid) {
                 userObject.setFirstName(firstName);
                 logger.info(userObject.getFirstName());
             } else {
-                logger.info("Invalid input!! Please try again");
+                throw new InvalidInputException();
             }
-        }
-        while ((validInvalidLastName.equals("invalid"))) {
+
             logger.info("Please enter last name: ");
             String lastName = scannerObject.nextLine();
-            validInvalidLastName = namePatternMatcher(lastName);
-            if (validInvalidLastName.equals("valid")) {
+            isValid = namePatternMatcher(lastName);
+            if (isValid) {
                 userObject.setLastName(lastName);
                 logger.info(userObject.getLastName());
             } else {
-                logger.info("Invalid input!! Please try again");
+                throw new InvalidInputException();
             }
-        }
 
-        while ((validInvalidEmail.equals("invalid"))) {
             logger.info("Please enter Email Id: ");
             String emailId = scannerObject.nextLine();
-            validInvalidEmail = emailPatternMatcher(emailId);
-            if (validInvalidEmail.equals("valid")) {
+            isValid = emailPatternMatcher(emailId);
+            if (isValid) {
                 userObject.setEmailId(emailId);
                 logger.info(userObject.getEmailId());
             } else {
-                logger.info("Invalid input!! Please try again");
+                throw new InvalidInputException();
             }
-        }
-        while ((validInvalidPhoneNumber.equals("invalid"))) {
+
             logger.info("Please enter Phone number: ");
             String phoneNumber = scannerObject.nextLine();
-            validInvalidPhoneNumber = phoneNumberPatternMatcher(phoneNumber);
-            if (validInvalidPhoneNumber.equals("valid")) {
+            isValid = phoneNumberPatternMatcher(phoneNumber);
+            if (isValid) {
                 userObject.setPhoneNumber(phoneNumber);
                 logger.info(userObject.getPhoneNumber());
             } else {
-                logger.info("Invalid input!! Please try again");
+                throw new InvalidInputException();
             }
-        }
 
-        while ((validInvalidPassword.equals("invalid"))) {
             logger.info("Please enter Password: ");
             String password = scannerObject.nextLine();
-            validInvalidPassword = passwordPatternMatcher(password);
-            if (validInvalidPassword.equals("valid")) {
+            isValid = passwordPatternMatcher(password);
+            if (isValid) {
                 userObject.setPassword(password);
                 logger.info(userObject.getPassword());
             } else {
-                logger.info("Invalid input!! Please try again");
+                throw new InvalidInputException();
             }
+        } catch (InvalidInputException e) {
+            logger.info("Invalid Input detected!");
         }
         scannerObject.close();
     }
