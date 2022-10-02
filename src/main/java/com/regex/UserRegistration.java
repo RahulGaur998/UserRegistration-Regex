@@ -64,9 +64,9 @@ public class UserRegistration {
             logger.info("Please enter Email Id: ");
             String emailId = scannerObject.nextLine();
             validInvalidEmail = emailPatternMatcher(emailId);
-            if (validInvalidEmail.equals("valid")) {
-                userObject.setLastName(emailId);
-                logger.info(userObject.getEmailid());
+            if (validInvalidLastName.equals("valid")) {
+                userObject.setEmailId(emailId);
+                logger.info(userObject.getEmailId());
             } else {
                 logger.info("Invalid input!! Please try again");
             }

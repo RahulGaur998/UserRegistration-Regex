@@ -3,14 +3,14 @@ package com.regex;
 public class User {
     private String firstName;
     private String lastName;
-    private String emailid;
+    private String emailId;
 
-    public String getEmailid() {
-        return emailid;
+    public String getEmailId() {
+        return emailId;
     }
 
-    public void setEmailid(String emailid) {
-        this.emailid = emailid;
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
     }
 
     public String getLastName() {
