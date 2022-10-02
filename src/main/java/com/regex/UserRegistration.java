@@ -43,7 +43,7 @@ public class UserRegistration {
     }
 
     String passwordPatternMatcher(String value) {
-        Pattern patternObject = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z]).{8,}");
+        Pattern patternObject = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#&–?/*~$^]{1})).{8,}$");
         Matcher matchObject = patternObject.matcher(value);
         if (matchObject.matches()) {
             return "valid";
