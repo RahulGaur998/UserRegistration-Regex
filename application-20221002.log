@@ -67,3 +67,18 @@
 2022-10-02 13:18:16.868 [main] INFO  com.regex.App - sad
 2022-10-02 13:18:16.868 [main] INFO  com.regex.App - Please enter Email Id: 
 2022-10-02 13:18:27.196 [main] INFO  com.regex.App - ga.asd@gm.co
+2022-10-02 13:58:06.202 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 13:58:06.223 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 13:58:07.431 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 13:58:07.432 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 13:58:09.513 [main] INFO  com.regex.App - Rahul
+2022-10-02 13:58:09.514 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 13:58:10.554 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 13:58:10.554 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 13:58:12.157 [main] INFO  com.regex.App - Gaur
+2022-10-02 13:58:12.157 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-02 13:58:19.164 [main] INFO  com.regex.App - asd.asd@gm.in
+2022-10-02 13:58:19.165 [main] INFO  com.regex.App - Please enter Phone number: 
+2022-10-02 13:58:23.443 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 13:58:23.444 [main] INFO  com.regex.App - Please enter Phone number: 
+2022-10-02 13:58:31.842 [main] INFO  com.regex.App - 91 9689516995
