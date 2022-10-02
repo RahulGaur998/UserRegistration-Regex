@@ -23,7 +23,8 @@ public class UserRegistration {
     }
 
     String emailPatternMatcher(String value) {
-        Pattern patternObject = Pattern.compile("^[a-z]{1}[a-zA-Z.]*@[a-z]{2}.[a-z]{2}[a-z.]?");
+        Pattern patternObject = Pattern.compile("^[a-z]{1}[a-zA-Z0-9+-.]*@[a-z0-9]*.[a-z]*(.[a-z]*?)$");
+        // ^[a-z]{1}[a-zA-Z.]*@[a-z]{2}.[a-z]{2}[a-z.]?
         Matcher matchObject = patternObject.matcher(value);
         if (matchObject.matches()) {
             return "valid";

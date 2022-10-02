@@ -67,6 +67,7 @@
 2022-10-02 13:18:16.868 [main] INFO  com.regex.App - sad
 2022-10-02 13:18:16.868 [main] INFO  com.regex.App - Please enter Email Id: 
 2022-10-02 13:18:27.196 [main] INFO  com.regex.App - ga.asd@gm.co
+<<<<<<< HEAD
 2022-10-02 13:58:06.202 [main] INFO  com.regex.App - Regex Practise Problem
 2022-10-02 13:58:06.223 [main] INFO  com.regex.App - Please enter first name: 
 2022-10-02 13:58:07.431 [main] INFO  com.regex.App - Invalid input!! Please try again
@@ -151,3 +152,12 @@
 2022-10-02 15:28:34.344 [main] INFO  com.regex.App - Please enter Password: 
 2022-10-02 15:28:40.055 [main] INFO  com.regex.App - Invalid input!! Please try again
 2022-10-02 15:28:40.056 [main] INFO  com.regex.App - Please enter Password: 
+=======
+2022-10-02 15:47:20.217 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 15:47:20.225 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 15:47:22.632 [main] INFO  com.regex.App - Rahul
+2022-10-02 15:47:22.633 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 15:47:24.101 [main] INFO  com.regex.App - Gaur
+2022-10-02 15:47:24.102 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-02 15:47:29.188 [main] INFO  com.regex.App - aasd@fas.com
+>>>>>>> EmailValidation
