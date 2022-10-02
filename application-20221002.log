@@ -82,3 +82,44 @@
 2022-10-02 13:58:23.443 [main] INFO  com.regex.App - Invalid input!! Please try again
 2022-10-02 13:58:23.444 [main] INFO  com.regex.App - Please enter Phone number: 
 2022-10-02 13:58:31.842 [main] INFO  com.regex.App - 91 9689516995
+2022-10-02 14:44:32.965 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 14:44:32.974 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 14:44:35.070 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 14:44:35.071 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 14:44:39.316 [main] INFO  com.regex.App - Rahul
+2022-10-02 14:44:39.317 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 14:44:42.277 [main] INFO  com.regex.App - Gaur
+2022-10-02 14:44:42.278 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-02 14:44:47.911 [main] INFO  com.regex.App - afs@fs.in
+2022-10-02 14:44:47.912 [main] INFO  com.regex.App - Please enter Phone number: 
+2022-10-02 14:44:52.937 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 14:44:52.938 [main] INFO  com.regex.App - Please enter Phone number: 
+2022-10-02 14:44:58.416 [main] INFO  com.regex.App - 91 9689516995
+2022-10-02 14:44:58.417 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-02 14:45:03.420 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 14:45:03.421 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-02 14:45:10.179 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 14:45:10.180 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-02 14:45:26.074 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 14:45:26.074 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-02 15:09:07.259 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 15:09:07.260 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-02 15:09:15.068 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 15:09:15.079 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-02 15:09:17.938 [main] INFO  com.regex.App - Rahul
+2022-10-02 15:09:17.939 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-02 15:09:19.343 [main] INFO  com.regex.App - Gaur
+2022-10-02 15:09:19.343 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-02 15:09:20.360 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 15:09:20.361 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-02 15:09:25.436 [main] INFO  com.regex.App - sa@fa.kj
+2022-10-02 15:09:25.437 [main] INFO  com.regex.App - Please enter Phone number: 
+2022-10-02 15:09:31.022 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 15:09:31.023 [main] INFO  com.regex.App - Please enter Phone number: 
+2022-10-02 15:09:36.228 [main] INFO  com.regex.App - 91 9689516995
+2022-10-02 15:09:36.229 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-02 15:09:38.880 [main] INFO  com.regex.App - Invalid input!! Please try again
+2022-10-02 15:09:38.881 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-02 15:09:41.181 [main] INFO  com.regex.App - Aadsdasdas
+2022-10-02 15:09:42.081 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-02 15:09:42.102 [main] INFO  com.regex.App - Please enter first name: 
