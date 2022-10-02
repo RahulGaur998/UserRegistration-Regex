@@ -4,6 +4,18 @@ public class User {
     private String firstName;
     private String lastName;
     private String emailId;
+<<<<<<< HEAD
+=======
+    private String phoneNumber;
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+>>>>>>> PhoneNumberValidation
 
     public String getEmailId() {
         return emailId;
