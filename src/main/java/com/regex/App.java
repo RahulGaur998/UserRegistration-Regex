@@ -8,5 +8,7 @@ public class App {
 
     public static void main(String[] args) {
         logger.info("Regex Practise Problem");
+        UserRegistration userRegistrationObject = new UserRegistration();
+        userRegistrationObject.UserRegistrationMain();
     }
 }
