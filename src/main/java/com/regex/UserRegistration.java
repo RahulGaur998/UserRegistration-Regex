@@ -21,6 +21,7 @@ public class UserRegistration {
             return "invalid";
         }
     }
+
     String emailPatternMatcher(String value) {
         Pattern patternObject = Pattern.compile("^[a-z]{1}[a-zA-Z.]*@[a-z]{2}.[a-z]{2}[a-z.]?");
         Matcher matchObject = patternObject.matcher(value);
@@ -63,14 +64,14 @@ public class UserRegistration {
             logger.info("Please enter Email Id: ");
             String emailId = scannerObject.nextLine();
             validInvalidEmail = emailPatternMatcher(emailId);
-            if (validInvalidLastName.equals("valid")) {
+            if (validInvalidEmail.equals("valid")) {
                 userObject.setLastName(emailId);
-                logger.info(userObject.getLastName());
+                logger.info(userObject.getEmailid());
             } else {
                 logger.info("Invalid input!! Please try again");
             }
         }
-        
+
         scannerObject.close();
     }
 
