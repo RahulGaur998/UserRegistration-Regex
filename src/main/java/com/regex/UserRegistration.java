@@ -7,44 +7,18 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@FunctionalInterface
+interface patternMatcher {
+    boolean pattern(String value, String pattern);
+}
+
 public class UserRegistration {
     private static final Logger logger = LogManager.getLogger(App.class);
     Scanner scannerObject = new Scanner(System.in);
     User userObject = new User();
 
-    Boolean namePatternMatcher(String value) {
-        Pattern patternObject = Pattern.compile("^[A-Z]{1}[a-z]{3,}");
-        Matcher matchObject = patternObject.matcher(value);
-        if (matchObject.matches()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    Boolean emailPatternMatcher(String value) {
-        Pattern patternObject = Pattern.compile("^[a-z]{1}[a-zA-Z0-9+-.]*@[a-z0-9]*.[a-z]*(.[a-z]*?)$");
-        // ^[a-z]{1}[a-zA-Z.]*@[a-z]{2}.[a-z]{2}[a-z.]?
-        Matcher matchObject = patternObject.matcher(value);
-        if (matchObject.matches()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    Boolean phoneNumberPatternMatcher(String value) {
-        Pattern patternObject = Pattern.compile("^[91]{2}[ ]{1}[0-9]{10}$");
-        Matcher matchObject = patternObject.matcher(value);
-        if (matchObject.matches()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    Boolean passwordPatternMatcher(String value) {
-        Pattern patternObject = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#&–?/*~$^]{1})).{8,}$");
+    boolean pattern(String value, String pattern) {
+        Pattern patternObject = Pattern.compile(pattern);
         Matcher matchObject = patternObject.matcher(value);
         if (matchObject.matches()) {
             return true;
@@ -59,7 +33,7 @@ public class UserRegistration {
         try {
             logger.info("Please enter first name: ");
             String firstName = scannerObject.nextLine();
-            isValid = namePatternMatcher(firstName);
+            isValid = pattern(firstName, "^[A-Z]{1}[a-z]{3,}");
             if (isValid) {
                 userObject.setFirstName(firstName);
                 logger.info(userObject.getFirstName());
@@ -69,7 +43,7 @@ public class UserRegistration {
 
             logger.info("Please enter last name: ");
             String lastName = scannerObject.nextLine();
-            isValid = namePatternMatcher(lastName);
+            isValid = pattern(lastName, "^[A-Z]{1}[a-z]{3,}");
             if (isValid) {
                 userObject.setLastName(lastName);
                 logger.info(userObject.getLastName());
@@ -79,7 +53,8 @@ public class UserRegistration {
 
             logger.info("Please enter Email Id: ");
             String emailId = scannerObject.nextLine();
-            isValid = emailPatternMatcher(emailId);
+
+            isValid = pattern(emailId, "^[a-z]{1}[a-zA-Z0-9+-.]*@[a-z0-9]*.[a-z]*(.[a-z]*?)$");
             if (isValid) {
                 userObject.setEmailId(emailId);
                 logger.info(userObject.getEmailId());
@@ -89,7 +64,7 @@ public class UserRegistration {
 
             logger.info("Please enter Phone number: ");
             String phoneNumber = scannerObject.nextLine();
-            isValid = phoneNumberPatternMatcher(phoneNumber);
+            isValid = pattern(phoneNumber, "^[91]{2}[ ]{1}[0-9]{10}$");
             if (isValid) {
                 userObject.setPhoneNumber(phoneNumber);
                 logger.info(userObject.getPhoneNumber());
@@ -99,7 +74,7 @@ public class UserRegistration {
 
             logger.info("Please enter Password: ");
             String password = scannerObject.nextLine();
-            isValid = passwordPatternMatcher(password);
+            isValid = pattern(password, "^(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#&?/*~$^]{1})).{8,}$");
             if (isValid) {
                 userObject.setPassword(password);
                 logger.info(userObject.getPassword());
