@@ -1,0 +1,42 @@
+2022-10-04 23:10:05.724 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-04 23:10:05.734 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-04 23:10:08.978 [main] INFO  com.regex.App - Rahul
+2022-10-04 23:10:08.979 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-04 23:10:11.606 [main] INFO  com.regex.App - Gaur
+2022-10-04 23:10:11.607 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-04 23:10:14.028 [main] INFO  com.regex.App - Invalid Input detected!
+2022-10-04 23:10:34.593 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-04 23:10:34.601 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-04 23:10:37.188 [main] INFO  com.regex.App - Invalid Input detected!
+2022-10-04 23:10:41.446 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-04 23:10:41.462 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-04 23:10:43.164 [main] INFO  com.regex.App - Rahul
+2022-10-04 23:10:43.164 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-04 23:10:44.607 [main] INFO  com.regex.App - Gaur
+2022-10-04 23:10:44.608 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-04 23:10:51.908 [main] INFO  com.regex.App - Invalid Input detected!
+2022-10-04 23:10:55.168 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-04 23:10:55.190 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-04 23:10:59.378 [main] INFO  com.regex.App - Rahul
+2022-10-04 23:10:59.378 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-04 23:11:00.702 [main] INFO  com.regex.App - Gaur
+2022-10-04 23:11:00.703 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-04 23:11:04.814 [main] INFO  com.regex.App - Invalid Input detected!
+2022-10-04 23:11:08.302 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-04 23:11:08.310 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-04 23:11:11.499 [main] INFO  com.regex.App - Rahul
+2022-10-04 23:11:11.499 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-04 23:11:12.343 [main] INFO  com.regex.App - Guar
+2022-10-04 23:11:12.344 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-04 23:11:16.973 [main] INFO  com.regex.App - Invalid Input detected!
+2022-10-04 23:12:22.469 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-04 23:12:22.494 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-04 23:12:25.211 [main] INFO  com.regex.App - Rahul
+2022-10-04 23:12:25.212 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-04 23:12:26.243 [main] INFO  com.regex.App - Guar
+2022-10-04 23:12:26.245 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-04 23:12:34.916 [main] INFO  com.regex.App - gaur.rahul996@gmail.com
+2022-10-04 23:12:34.917 [main] INFO  com.regex.App - Please enter Phone number: 
+2022-10-04 23:12:39.589 [main] INFO  com.regex.App - 91 9689516995
+2022-10-04 23:12:39.591 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-04 23:12:43.397 [main] INFO  com.regex.App - Invalid Input detected!
