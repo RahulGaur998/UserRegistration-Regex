@@ -1,0 +1,11 @@
+2022-10-05 21:50:35.879 [main] INFO  com.regex.App - Regex Practise Problem
+2022-10-05 21:50:35.902 [main] INFO  com.regex.App - Please enter first name: 
+2022-10-05 21:50:37.914 [main] INFO  com.regex.App - Rahuk
+2022-10-05 21:50:37.915 [main] INFO  com.regex.App - Please enter last name: 
+2022-10-05 21:50:40.066 [main] INFO  com.regex.App - Guar
+2022-10-05 21:50:40.067 [main] INFO  com.regex.App - Please enter Email Id: 
+2022-10-05 21:50:47.783 [main] INFO  com.regex.App - gaur.rahuk996@gmail.coim
+2022-10-05 21:50:47.784 [main] INFO  com.regex.App - Please enter Phone number: 
+2022-10-05 21:50:53.023 [main] INFO  com.regex.App - 91 9689516995
+2022-10-05 21:50:53.024 [main] INFO  com.regex.App - Please enter Password: 
+2022-10-05 21:50:58.909 [main] INFO  com.regex.App - Raghyi@23
