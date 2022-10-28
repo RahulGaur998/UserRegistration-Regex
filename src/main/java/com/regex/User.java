@@ -1,5 +1,10 @@
 package com.regex;
 
+/**
+ * The User class represents a user with firstname, lastname, email,
+ * password,etc
+ * 
+ */
 public class User {
     private String firstName;
     private String lastName;

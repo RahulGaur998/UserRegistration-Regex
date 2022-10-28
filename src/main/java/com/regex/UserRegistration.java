@@ -7,16 +7,33 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * The FunctionalInterface patternMatcher has an declared method patern
+ * 
+ * @return boolean to indicate whether pattern matches or not
+ */
 @FunctionalInterface
 interface patternMatcher {
     boolean pattern(String value, String pattern);
 }
 
+/**
+ * The UserRegistration class has multiple methods which checks pattern with
+ * user inputs and validates them
+ * 
+ */
 public class UserRegistration {
     private static final Logger logger = LogManager.getLogger(App.class);
     Scanner scannerObject = new Scanner(System.in);
     User userObject = new User();
 
+    /**
+     * Implementation of method patern
+     * 
+     * @params value - user input
+     * @param pattern - pattern to match for firstname,lastname,etc
+     * @return boolean to indicate whether pattern matches or not
+     */
     patternMatcher patternChecker = (value, pattern) -> {
         Pattern patternObject = Pattern.compile(pattern);
         Matcher matchObject = patternObject.matcher(value);
@@ -27,6 +44,10 @@ public class UserRegistration {
         }
     };
 
+    /**
+     * UserRegistration main method to take inputs
+     * 
+     */
     void UserRegistrationMain() throws InvalidInputException {
         Boolean isValid;
 
